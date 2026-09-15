@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nepal Niche | Authentic Nepali Products</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#home" class="logo">
+                Nepal <span>Niche</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#artisans">Artisans</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <p class="eyebrow">Authentic Products From Nepal</p>
+
+                <h1>
+                    Discover the Beauty
+                    <span>of Nepal</span>
+                </h1>
+
+                <p>
+                    Explore traditional Nepali products made with culture,
+                    creativity, and care by local artisans.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn primary-btn">
+                        Explore Products
+                    </a>
+
+                    <a href="#about" class="btn secondary-btn">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/dhaka topi.jpg" alt="Traditional Nepali Dhaka Topi">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+        <div class="container features-grid">
+
+            <div class="feature-card">
+                <h3>Authentic Products</h3>
+                <p>Traditional products inspired by Nepali culture.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Local Artisans</h3>
+                <p>Supporting talented makers and small businesses.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Quality First</h3>
+                <p>Carefully selected products with cultural value.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Products -->
+<section id="products" class="products-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">Our Collection</p>
+            <h2>Explore Nepali Products</h2>
+            <p>Discover traditional products made with culture and care.</p>
+        </div>
+
+        <div class="product-controls">
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+
+            <select id="categoryFilter" aria-label="Filter products by category">
+                <option value="all">All Categories</option>
+                <option value="fashion">Fashion</option>
+                <option value="paper">Paper & Stationery</option>
+                <option value="food">Food & Tea</option>
+                <option value="spiritual">Spiritual</option>
+                <option value="art">Art & Craft</option>
+            </select>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+
+            <article class="product-card" data-name="dhaka topi" data-category="fashion">
+                <img src="images/dhaka topi.jpg" alt="Traditional Nepali Dhaka Topi">
+                <div class="product-info">
+                    <h3>Dhaka Topi</h3>
+                    <p>Traditional Nepali handmade cap.</p>
+                    <strong class="price">¥2,500</strong>
+                    <button class="add-cart-btn"
+                            data-name="Dhaka Topi"
+                            data-price="2500">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="lokta paper" data-category="paper">
+                <img src="images/lokta paper.jpg" alt="Handmade Lokta Paper">
+                <div class="product-info">
+                    <h3>Lokta Paper</h3>
+                    <p>Eco-friendly handmade Nepali paper.</p>
+                    <strong class="price">¥1,800</strong>
+                    <button class="add-cart-btn"
+                            data-name="Lokta Paper"
+                            data-price="1800">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="herbal tea" data-category="food">
+                <img src="images/herbal tea.jpg" alt="Nepali Herbal Tea">
+                <div class="product-info">
+                    <h3>Herbal Tea</h3>
+                    <p>Natural flavors from the Himalayan region.</p>
+                    <strong class="price">¥1,200</strong>
+                    <button class="add-cart-btn"
+                            data-name="Herbal Tea"
+                            data-price="1200">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="pashmina" data-category="fashion">
+                <img src="images/pashmina.jpg" alt="Nepali Pashmina">
+                <div class="product-info">
+                    <h3>Pashmina</h3>
+                    <p>Soft and elegant traditional Nepali textile.</p>
+                    <strong class="price">¥6,500</strong>
+                    <button class="add-cart-btn"
+                            data-name="Pashmina"
+                            data-price="6500">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="singing bowl" data-category="spiritual">
+                <img src="images/singing bowl.jpg" alt="Traditional Singing Bowl">
+                <div class="product-info">
+                    <h3>Singing Bowl</h3>
+                    <p>Traditional instrument for sound and meditation.</p>
+                    <strong class="price">¥4,800</strong>
+                    <button class="add-cart-btn"
+                            data-name="Singing Bowl"
+                            data-price="4800">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="wood carving" data-category="art">
+                <img src="images/wood carving.jpg" alt="Nepali Wood Carving">
+                <div class="product-info">
+                    <h3>Wood Carving</h3>
+                    <p>Beautiful artwork inspired by Nepali heritage.</p>
+                    <strong class="price">¥5,500</strong>
+                    <button class="add-cart-btn"
+                            data-name="Wood Carving"
+                            data-price="5500">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noProductsMessage" class="no-products-message">
+            No products found.
+        </p>
+
+    </div>
+</section>
+
+<!-- About -->
+    <section id="about" class="about-section">
+        <div class="container about-content">
+
+            <div>
+                <p class="eyebrow">Our Story</p>
+                <h2>From Nepal to the World</h2>
+            </div>
+
+            <p>
+                Nepal Niche is a platform created to introduce authentic
+                Nepali products to customers around the world. We aim to
+                connect customers with local artisans while celebrating
+                Nepal's rich culture and traditions.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Artisans -->
+    <section id="artisans" class="artisans-section">
+        <div class="container section-heading">
+
+            <p class="eyebrow">Made With Care</p>
+
+            <h2>Supporting Nepali Artisans</h2>
+
+            <p>
+                Every product represents the skill, tradition, and dedication
+                of Nepali creators.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+
+            <h2>Stay Connected</h2>
+
+            <p>
+                More products and shopping features will be available soon.
+            </p>
+
+            <a href="mailto:hello@nepalniche.com" class="btn primary-btn">
+                Contact Us
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Nepal Niche. All rights reserved.
+            </p>
+
+            <p>
+                Celebrating Nepalese culture worldwide.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+    <script src="script.js"></script>
+</body>
+</html>
